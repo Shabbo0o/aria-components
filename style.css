@@ -1,0 +1,114 @@
+
+#accessibleModal {
+    display:none;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgb(0, 0, 0);
+    text-align: center;
+}
+
+#accessibleModal.active {
+    display: block;
+}
+
+#modalOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(146, 154, 167);
+}
+
+#modalOverlay.active {
+    display: block;
+}
+
+dialog {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgb(0, 0, 0);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+dialog::backdrop {
+    background-color: rgb(146, 154, 167);
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin: 20px;
+}
+button {
+    margin-top: 10px;
+    padding: 8px;
+    font-weight:500;
+    width: 120px;
+}
+
+/* Menu */
+#menuButton {
+    background-color: #8cbbee;
+    padding: 5px 1px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.barIcon {
+    width: 28px;
+    height: auto;
+}
+
+#menuContent {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgb(0, 0, 0);
+    width: 200px;
+}
+
+#menuContent ul {
+    margin: 0;
+    padding: 0;
+}
+
+#menuContent li {
+    border-bottom: 1px solid #ddd;
+}
+
+#menuContent li:last-child {
+    border-bottom: none;
+}
+
+#menuContent a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+#menuContent a:hover {
+    background-color: #f0f0f0;
+}
+
+nav {
+    margin-left: 8px;
+    margin-top: 6px;
+}

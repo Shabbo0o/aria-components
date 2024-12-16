@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <button id="menuButton" aria-controls="menuContent" aria-expanded="false">
+            <img src="/public/burger-bar.png" class="barIcon">
+        </button>
+        <nav id="menuContent" role="menu">
+            <ul>
+                <li><a href="#" role="menuitem">Hem</a></li>
+                <li><a href="#" role="menuitem">Om oss</a></li>
+                <li><a href="#" role="menuitem">Tjänster</a></li>
+                <li><a href="#" role="menuitem">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div>
+            <button id="openModalBtn">Open Modal</button>
+            <button id="openDialogBtn">Open Dialog</button>
+        </div>
+        <div id="modalOverlay">
+
+        </div>
+
+        <div id="accessibleModal" role="dialog" aria-labelledby="modalTitle" aria-modal="true">
+            <h2 id="modalTitle">Exempel på modalfönster</h2>
+            <p>Här är lite text i modalfönstret.</p>
+            <button id="closeModalBtn">Stäng</button>
+        </div>
+
+        <dialog id="accessibleDialog" aria-labelledby="dialogTitle">
+            <h2 id="dialogTitle">Exempel på tillgängligt modalfönster med &lt;dialog&gt;</h2>
+            <p>Här är innehållet i modalfönstret.</p>
+            <button id="closeDialogBtn">Stäng</button>
+        </dialog>     
+
+        <script src="code.js"></script>
+    </body>
+</html>
