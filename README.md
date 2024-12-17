@@ -12,8 +12,6 @@ A custom modal using ARIA roles.
 A native HTML `<dialog>` modal.
 The goal is to improve web accessibility and ensure `user`s of assistive technologies, such as screen readers, can interact with the application seamlessly.
 
----
-
 ## Features
 ### Accessible Navigation Menu:
 
@@ -29,25 +27,20 @@ HTML `<dialog>` Modal:
 
 Leverages the native `<dialog>` element for enhanced simplicity.
 Closes on pressing the Escape key.
----
+
 ## Code Structure
 The project includes:
 
-**HTML:** Markup for the menu, modals, and buttons.
-**CSS:** Styling for the layout, modals, and menu.
-**JavaScript:** Logic for opening/closing modals and managing the navigation menu.
----
-## Key Files:
-**index.html:** The main HTML file.
-**style.css:** Styles for modals, navigation menu, and buttons.
-**code.js:** JavaScript for interactivity.
----
+- HTML: Markup for the menu, modals, and buttons.
+- CSS: Styling for the layout, modals, and menu.
+- JavaScript: Logic for opening/closing modals and managing the navigation menu.
+
 ## Technologies Used
 - HTML5
 - CSS3
 - JavaScript (ES6+)
 - ARIA (Accessible Rich Internet Applications)
----
+
 ## Accessibility Considerations
 
 1. **Custom Modal**:
