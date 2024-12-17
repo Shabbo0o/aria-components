@@ -27,23 +27,25 @@ function openModal() {
     modal.classList.add("active");
     modalOverlay.classList.add("active");
     closeModalBtn.focus();
+    modal.setAttribute("aria-modal", 'true');
 }
 
 function closeModal() {
     modal.classList.remove("active");
     modalOverlay.classList.remove("active");
     openModalBtn.focus();
+    modal.setAttribute("aria-modal", 'false');
 }
 
 // Dialog open/close
 function openDialog() {
     dialog.showModal();
-    closeDialogBtn.focus();
+    // closeDialogBtn.focus();
 }
 
 function closeDialog() {
     dialog.close();
-    openDialogBtn.focus();
+    // openDialogBtn.focus();
 }
 
 
