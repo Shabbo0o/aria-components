@@ -49,7 +49,7 @@ div {
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    margin: 20px;
+    margin: 0px;
 }
 button {
     margin-top: 10px;
